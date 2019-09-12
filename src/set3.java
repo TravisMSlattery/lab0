@@ -10,12 +10,12 @@ public class set3 {
         double taxFree = 20000;
         double lowTax = 36000;
 
-        if (totalIncome <=20000){
+        if (totalIncome <= 20000){
 
             JOptionPane.showMessageDialog(null,"Hi " + name + "Your Tax rate is 0%.\nYour income is €" + String.format("%.2f",totalIncome),"Tax Details",
                     JOptionPane.INFORMATION_MESSAGE);
         }
-        else if (totalIncome >20000 && totalIncome <= 36000)
+        else if (totalIncome > 20000 || totalIncome <= 36000)
         {
             double lessTax = (totalIncome - taxFree) * lowRate;
             double net = totalIncome - lessTax;
